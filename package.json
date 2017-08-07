@@ -13,6 +13,7 @@
     "hark": "^1.1.5"
   },
   "devDependencies": {
-    "browserify": "^14.4.0"
+    "browserify": "^14.4.0",
+    "surge": "^0.19.0"
   }
 }
