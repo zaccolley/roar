@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.53);
+}
+
+main {
+  max-width: 25em;
+  margin: 0 auto;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
+h1 {
+  letter-spacing: 0.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.output {
+  overflow: hidden;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://fillmurray.com/300/300');
+  background-size: cover;
+  border: 10px solid;
+  border-radius: 50%;
+  font-size: 5em;
+  height: 300px;
+  width: 300px;
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(0.9);
+  }
+}
+
+.output--speaking {
+  border-color: black;
+  animation: pulse 1s infinite alternate ease-in-out;
+}
+
+.score {
+  border-radius: 50%;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 0.85em;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  transition: opacity 0.33s;
+}
+
+.output--finished-speaking {
+  border-color: grey;
+}
+
+.output--finished-speaking .score {
+  opacity: 1;
+}
+
+.output--ok {
+  border-color: blue;
+}
+
+.output--not-bad {
+  border-color: green;
+  transform: scale(1.1);
+}
+
+.output--woah {
+  border-color: orange;
+  transform: scale(1.15);
+}
+
+.output--wtf {
+  border-color: red;
+  transform: scale(1.2);
+}
+
+.output--holy-shit {
+  border-color: purple;
+  transform: scale(1.25);
+}

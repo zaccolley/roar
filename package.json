@@ -1,0 +1,18 @@
+{
+  "name": "roar",
+  "version": "1.0.0",
+  "description": "scream into the website and it tells ya how loud it is lol",
+  "scripts": {
+    "deploy": "yarn build && yarn surge",
+    "surge": "surge -p ./build -d roar.surge.sh",
+    "build": "browserify main.js -o build/bundle.js"
+  },
+  "author": "Zac Colley",
+  "dependencies": {
+    "getusermedia": "^2.0.1",
+    "hark": "^1.1.5"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0"
+  }
+}
